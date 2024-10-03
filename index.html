@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفقات تداول العملات الرقمية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            direction: rtl;
+            background-color: #E9EEF2;
+            color: #333;
+        }
+
+        header {
+            background-color: #0088cc; /* لون مشابه لـ Telegram */
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .channel-name-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 10px;
+            gap: 10px;
+            background-color: white;
+            color: #0088cc;
+            padding: 5px 20px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            animation: bounce 1.5s infinite;
+        }
+
+        .channel-logo {
+            width: 40px;
+            height: 40px;
+            background-color: #0088cc;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .channel-logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .main-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #cfd8dc;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            aspect-ratio: 16 / 9; /* نسبة العرض إلى الارتفاع 16:9 */
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            color: #0088cc;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #0088cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #006699;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background-color: #0088cc;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .card img {
+                height: auto;
+            }
+            
+            header {
+                font-size: 2rem;
+                padding: 20px;
+            }
+
+            .channel-name-wrapper {
+                font-size: 1rem;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+
+            .card p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="channel-name-wrapper">
+            <div class="channel-logo">
+                <img src="https://i.suar.me/mBwaP/l" alt="شعار القناة">
+            </div>
+            <div>قناة صفقات تداول عملات رقمية</div>
+        </div>
+    </header>
+
+    <section class="main-section">
+        <!-- اشتراك 10 دولار -->
+        <div class="card">
+            <img src="https://i.suar.me/lvwK9/l" alt="اشتراك 10 دولار">
+            <div class="card-content">
+                <h2>اشتراك صفقة يومية</h2>
+                <p>احصل على توصية تداول واحدة يوميًا مقابل $10 شهريًا.</p>
+                <a href="https://sekanedr.github.io/Comingsoon/" class="btn">اشترك الآن</a>
+            </div>
+        </div>
+
+        <!-- اشتراك 50 دولار -->
+        <div class="card">
+            <img src="https://i.suar.me/1WYZY/l" alt="اشتراك 50 دولار">
+            <div class="card-content">
+                <h2>اشتراك 3 صفقات يوميًا</h2>
+                <p>احصل على 3 توصيات يومية مضمونة مقابل $50 شهريًا.</p>
+                <a href="https://sekanedr.github.io/Comingsoon/" class="btn">اشترك الآن</a>
+            </div>
+        </div>
+
+        <!-- زر سياسة الخصوصية -->
+        <div class="card">
+            <img src="https://i.suar.me/pvwKq/l" alt="سياسة الخصوصية">
+            <div class="card-content">
+                <h2>سياسة الخصوصية</h2>
+                <p>تعرف على سياسة خصوصية القناة وكيفية التعامل مع بيانات المستخدمين.</p>
+                <a href="https://sekanedr.github.io/Privacy-Policy/" class="btn">عرض السياسة</a>
+            </div>
+        </div>
+
+        <!-- زر إخلاء المسؤولية -->
+        <div class="card">
+            <img src="https://i.suar.me/X8pY1/l" alt="إخلاء المسؤولية">
+            <div class="card-content">
+                <h2>إخلاء المسؤولية</h2>
+                <p>اقرأ إخلاء المسؤولية قبل الانخراط في أي استثمار.</p>
+                <a href="https://sekanedr.github.io/Disclaimer/" class="btn">عرض الإخلاء</a>
+            </div>
+        </div>
+
+        <!-- زر أخبار العملات الرقمية -->
+        <div class="card">
+            <img src="https://i.suar.me/AlWrP/l" alt="أخبار العملات الرقمية">
+            <div class="card-content">
+                <h2>أخبار العملات الرقمية</h2>
+                <p>ابق على اطلاع بآخر أخبار العملات الرقمية والتحليلات.</p>
+                <a href="https://sekanedr.github.io/Comingsoon/" class="btn">مشاهدة الأخبار</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 جميع الحقوق محفوظة - صفقات تداول العملات الرقمية</p>
+    </footer>
+</body>
+</html>
